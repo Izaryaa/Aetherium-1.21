@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "aetherium",
+
+	"version": "1.1.2",
+	"name": "Aetherium",
+	"description": "Adds a resource slightly stronger than Netherite called Aetherium.",
+	"authors": [
+		"Izarya"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Izaryaa/Aetherium"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/aetherium/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"name.aetherium.Aetherium"
+		],
+		"fabric-datagen": [
+			"name.aetherium.AetheriumDataGenerator"
+		],
+		"client":[
+			"name.aetherium.AetheriumClient"
+		]
+	},
+	"mixins": [
+		"aetherium.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
